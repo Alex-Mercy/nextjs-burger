@@ -10,10 +10,18 @@ const Header = () => {
         <FaHamburger />
       </div>
       <nav>
-        <Link href='/'>Домой</Link>
-        <Link href='/about'>О нас</Link>
-        <Link href='/review'>Отзывы</Link>
-        <Link href='/burgers'>Бургеры</Link>
+        <Link href='/'>
+          <a>Домой</a>
+        </Link>
+        <Link href='/about'>
+          <a>О нас</a>
+        </Link>
+        <Link href='/review'>
+          <a>Отзывы</a>
+        </Link>
+        <Link href='/burgers'>
+          <a>Бургеры</a>
+        </Link>
       </nav>
     </header>
   )
