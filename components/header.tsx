@@ -16,7 +16,7 @@ const Header = () => {
         <Link href='/about'>
           <a>О нас</a>
         </Link>
-        <Link href='/review'>
+        <Link href='/reviews'>
           <a>Отзывы</a>
         </Link>
         <Link href='/burgers'>
