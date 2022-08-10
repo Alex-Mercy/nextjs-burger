@@ -4,7 +4,7 @@ import React, { FC } from 'react'
 
 import styles from '../../styles/Burgers.module.css'
 
-type BurgerType = {
+export type BurgerType = {
   name: string
   image: string
   desc: string
