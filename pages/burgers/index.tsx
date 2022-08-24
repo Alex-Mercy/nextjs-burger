@@ -17,7 +17,7 @@ type BurgersPropsType = {
 }
 
 export const getStaticProps = async () => {
-  const res = await fetch('http://localhost:5000/items')
+  const res = await fetch('https://my-json-server.typicode.com/Alex-Mercy/burger-server/items')
   const data = await res.json()
   return {
     props: {
