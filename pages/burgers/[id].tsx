@@ -7,7 +7,7 @@ import { BurgerType } from './index'
 import styles from '../../styles/Burgers.module.css'
 
 export const getStaticPaths = async () => {
-  const res = await fetch('http://localhost:5000/items')
+  const res = await fetch('https://my-json-server.typicode.com/Alex-Mercy/burger-server/items')
   const data = await res.json()
 
   const paths = data.map((burger: BurgerType) => {
@@ -23,7 +23,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const id = context.params && context.params.id
-  const res = await fetch(`http://localhost:5000/items/${id}`)
+  const res = await fetch(`https://my-json-server.typicode.com/Alex-Mercy/burger-server/items/${id}`)
   const data = await res.json()
 
   return {
